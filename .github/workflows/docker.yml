@@ -1,4 +1,4 @@
-name: YOUR_DOCKERHUB_USERNAME
+name: seyitedd
 
 on:
   push:
@@ -20,7 +20,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker image
-        run: docker build -t YOUR_DOCKERHUB_USERNAME/flask-app:latest .
+        run: docker build -t seyitedd/flask-app:latest .
 
       - name: Push Docker image
-        run: docker push YOUR_DOCKERHUB_USERNAME/flask-app:latest
+        run: docker push seyitedd/flask-app:latest
